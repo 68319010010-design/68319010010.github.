@@ -1,60 +1,73 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+/* Element Selector */
+body{
+    background: linear-gradient(135deg,#74b9ff,#a29bfe);
+    font-family: Tahoma, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 30px;
 }
 
-.container {
-    width: 500px;
-    margin: 40px auto;
-    background-color: white;
+/* Class Selector */
+.card{
+    width: 600px;
+    margin: auto;
+    background: white;
     padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
+    border: 3px solid #6c5ce7;
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+
+    transition: 0.4s;
 }
 
-h2 {
+/* Hover Effect */
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+}
+
+h1{
     text-align: center;
-    color: #333;
+    color: #6c5ce7;
 }
 
-label {
+h2{
+    color: #0984e3;
+}
+
+p{
+    color: #2d3436;
+}
+
+ul{
+    color: #2d3436;
+    line-height: 1.8;
+}
+
+/* Class Selector */
+.edu{
+    text-align: center;
+    color: #636e72;
+}
+
+/* ID Selector */
+#profile{
     display: block;
-    margin-top: 12px;
-    font-weight: bold;
+    margin: 0 auto 20px auto; /* ทำให้รูปอยู่ตรงกลาง */
+
+    width: 180px;
+    height: 180px;
+
+    border: 5px solid #74b9ff;
+    border-radius: 50%;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+
+    object-fit: cover;
 }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-select,
-textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #9ed394;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.radio-group,
-.checkbox-group {
-    margin-top: 8px;
-}
-
-button {
-    width: 100%;
-    padding: 12px;
-    margin-top: 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #0056b3;
+#profile:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
 }
